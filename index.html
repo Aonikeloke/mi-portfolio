@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aoniken</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Botón de Tema -->
+    <button id="toggle-theme" aria-label="Cambiar tema">🌙</button>
+
+    <!-- Encabezado / Sobre Mí -->
+    <header class="hero">
+        <div class="container">
+            <img src="yo.jpeg" alt="Foto mia" class="perfil-foto">
+            <h1>Hola, soy Aoniken</h1>
+            <p class="hero-description">Estoy cursando el último año de la tecnicatura en programación y me gusta el desarrollo web. 
+            Disfruto armando tanto la parte de atrás de los sistemas como la interfaz visual, siempre tratando de que las cosas funcionen bien y queden prolijas.</p>
+            
+            <div class="skills-tags">
+                <h3><center>Lenguajes que manejo:</center></h3>
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>HTML / CSS</span>
+                <span>MySQL</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Proyectos -->
+    <main class="container">
+        <section class="projects-section">
+            <h2>Proyectos</h2>
+            <div class="projects-grid">
+                
+                <!-- Tarjeta interactiva de AMEMT -->
+                <div class="project-card expandable" id="card-amemt">
+                    <div class="card-header">
+                        <img src="amemtlogo.png" alt="Logo Fichero Digital AMEMT" class="card-icon-img">
+                        <span class="chevron">▼</span>
+                    </div>
+                    <h3>Fichero Digital AMEMT</h3>
+                    <p>Sistema web con backend, base de datos y un panel armado para gestión institucional.</p>
+                    
+                    <div class="card-details">
+                        <img src="amemt_folleto.jpeg" alt="Fichero Digital AMEMT - Folleto" class="project-img">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="recomanga.png" alt="Logo Recomanga" class="card-icon-img">
+                    <h3>Recomanga</h3>
+                    <p>Aplicación web enfocada en recomendaciones de anime y manga con diseño adaptable.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="juego.png" alt="Logo Juegos Retro Python" class="card-icon-img">
+                    <h3>Sombra</h3>
+                    <p>Pequeño juego hecho en 2d en grupo para las practicas profesionalizantes realizadas en Globant.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>7°-M Progamacion  -  E.E.S.T N°2  -  Web Dinamicas Prof. Alejandro Sirioni</footer>
+    <script src="script.js"></script>
+</body>
+</html>
